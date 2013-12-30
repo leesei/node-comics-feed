@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+var argv = require("nomnom")
+  .script("getitle")
+  .option('url', {
+    position: 0,
+    help: "feed url or file to parse",
+    list: false,
+    required: true
+  })
+  .option('verbose', {
+    abbr: 'v',
+    flag: true,
+    help: "Print processing logs"
+  })
+  .help("Author: ".bold +
+    "leesei@gmail.com".underline + "       "+
+    "Licence: ".bold + "MIT\n")
+  .parse();
+
+// console.log(argv);
+
+require('../lib/main.js').embedStrips(
+  {
+    url: argv.url,
+    verbose: argv.verbose
+  },
+  function (err, feedXml) {
+    console.log(feedXml);
+  }
+);

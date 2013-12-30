@@ -1,0 +1,25 @@
+{
+  "name": "comics-feed",
+  "version": "0.0.2",
+  "homepage": "http://github.com/leesei/node-comics-feed",
+  "description": "Scrape comics strips from feed, embed the strip images and create a new feed",
+  "main": "lib/main.js",
+  "bin": {
+    "csslint": "bin/comics-feed.js"
+  },
+  "author": "leesei@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/leesei/node-comics-feed"
+  },
+  "bugs": {
+    "url": "http://github.com/leesei/node-comics-feed/issues"
+  },
+  "dependencies": {
+    "async": "~0.2.9",
+    "rss": "~0.2.1",
+    "feedparser": "~0.16.5",
+    "cheerio": "~0.12.4"
+  },
+  "license": "MIT"
+}
