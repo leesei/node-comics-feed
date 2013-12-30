@@ -5,7 +5,7 @@ RSS feeds of comics sites usually contains the links to a webpage but not the st
 Supported websites:
 * GoComics
 * Dilbert.com
-> The list of parsers is meant to be extensible, see [`lib/parser.js`](https://github.com/leesei/node-comics-feed/blob/master/lib/parsers.js). PR is welcome.
+> The list of parsers is meant to be extensible, see [`lib/parser.js`](lib/parsers.js). PR is welcome.
 
 Inspired by [gocomics-scrape](https://github.com/mihaip/gocomics-scrape) and implemented it using Node.
 
@@ -18,10 +18,16 @@ comics-feed [.rss|url]
 
 ## Tested on
 
-http://feed.dilbert.com/dilbert/daily_strip
+http://feed.dilbert.com/dilbert/daily_strip  
 http://feeds.feedburner.com/uclick/dilbert-classics
+
+## TODO
+
+- Error handling
+  - invalid URL
+  - malformed feed
+  - scrape error
 
 ## SAAS on Heroku
 
-[heroku-comics-scraper](leesei/heroku-comics-scraper) uses this module to provide a subscrible RSS service.
-
+[heroku-comics-scraper](leesei/heroku-comics-feed) uses this module to provide a subscrible RSS service.
