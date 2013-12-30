@@ -15,6 +15,12 @@
   "bugs": {
     "url": "http://github.com/leesei/node-comics-feed/issues"
   },
+  "keywords": [
+    "rss",
+    "feed",
+    "comics",
+    "scrape"
+  ],
   "dependencies": {
     "async": "~0.2.9",
     "rss": "~0.2.1",
