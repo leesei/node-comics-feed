@@ -3,11 +3,11 @@
   "version": "0.0.2",
   "homepage": "http://github.com/leesei/node-comics-feed",
   "description": "Scrape comics strips from feed, embed the strip images and create a new feed",
+  "author": "KY LEE <leesei@gmail.com> (http://leesei.github.io/)",
   "main": "lib/main.js",
   "bin": {
-    "csslint": "bin/comics-feed.js"
+    "comics-feed": "bin/comics-feed"
   },
-  "author": "leesei@gmail.com",
   "repository": {
     "type": "git",
     "url": "http://github.com/leesei/node-comics-feed"
