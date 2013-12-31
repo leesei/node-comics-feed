@@ -33,4 +33,4 @@ http://feeds.feedburner.com/uclick/dilbert-classics
 
 ## SAAS on Heroku
 
-[heroku-comics-scraper](https://github.com/leesei/heroku-comics-feed) uses this module to provide a subscribable RSS service.
+[heroku-comics-feed](https://github.com/leesei/heroku-comics-feed) uses this module to provide a subscribable RSS service.
