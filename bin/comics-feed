@@ -26,6 +26,10 @@ require('../lib/main.js').embedStrips(
     verbose: argv.verbose
   },
   function (err, feedXml) {
+    if (err) {
+      return console.error("error parsing: " + feedUrl);
+    }
+
     console.log(feedXml);
   }
 );

@@ -18,7 +18,7 @@ comics-feed [.rss|url]
 
 ## Tested on
 
-http://feed.dilbert.com/dilbert/daily_strip  
+http://feed.dilbert.com/dilbert/DilbertDailyStrip  
 http://feeds.feedburner.com/uclick/dilbert-classics
 
 ## TODO
