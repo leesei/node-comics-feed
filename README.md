@@ -26,10 +26,12 @@ http://feeds.feedburner.com/uclick/dilbert-classics
 
 ## TODO
 
-- Error handling
+- error handling
   - invalid URL
   - malformed feed
   - scrape error
+- re-entrace
+- module globals
 
 ## SAAS on Heroku
 
