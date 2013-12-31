@@ -1,11 +1,14 @@
 # node-comics-feed
 
-RSS feeds of comics sites usually contains the links to a webpage but not the strip images. This module iterates on the items on a feed and parse the webpages to create a new feed with embedded comic strips.
+RSS feeds of comics sites usually contains the links to a webpage but not the strip images.  
+This module iterates on the items on a feed and parse the webpages to create a new feed with embedded comic strips.
 
 Supported websites:
 * GoComics
 * Dilbert.com
-> The list of parsers is meant to be extensible, see [`lib/parser.js`](lib/parsers.js). PR is welcome.
+
+> The list of parsers is meant to be extensible, see [`lib/parser.js`](lib/parsers.js).  
+> PRs are welcome.
 
 Inspired by [gocomics-scrape](https://github.com/mihaip/gocomics-scrape) and implemented it using Node.
 
@@ -30,4 +33,4 @@ http://feeds.feedburner.com/uclick/dilbert-classics
 
 ## SAAS on Heroku
 
-[heroku-comics-scraper](leesei/heroku-comics-feed) uses this module to provide a subscrible RSS service.
+[heroku-comics-scraper](https://github.com/leesei/heroku-comics-feed) uses this module to provide a subscribable RSS service.
