@@ -29,9 +29,9 @@ http://feeds.feedburner.com/uclick/dilbert-classics
 - error handling
   - invalid URL
   - malformed feed
-  - scrape error
-- re-entrace
-- module globals
+  - scraping error
+- re-entrance
+- module globals cleanup
 
 ## SAAS on Heroku
 
