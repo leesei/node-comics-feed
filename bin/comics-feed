@@ -27,7 +27,9 @@ require('../lib/main.js').embedStrips(
   },
   function (err, feedXml) {
     if (err) {
-      return console.error("error parsing: " + feedUrl);
+      console.error("error parsing: " + argv.url);
+      console.error(err);
+      return;
     }
 
     console.log(feedXml);
