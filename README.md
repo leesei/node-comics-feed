@@ -19,6 +19,16 @@ npm install comics-feed
 comics-feed [.rss|url]
 ```
 
+Turns [this](http://feed.dilbert.com/dilbert/daily_strip)
+
+![Before](https://raw.github.com/leesei/node-comics-feed/master/screenshots/dilbert-before.png)
+
+into [this](http://leesei-comics-feed.herokuapp.com/embed/http%3A%2F%2Ffeed.dilbert.com%2Fdilbert%2Fdaily_strip)
+
+![After](https://raw.github.com/leesei/node-comics-feed/master/screenshots/dilbert-after.png)
+
+(rendered by Firefox)
+
 ## Tested on
 
 http://feed.dilbert.com/dilbert/daily_strip  
