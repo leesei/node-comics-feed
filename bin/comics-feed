@@ -14,9 +14,9 @@ var argv = require("nomnom")
     help: "Print processing logs"
   })
   .option('maxitems', {
-	abbr: 'm',
-	metavar: "N",
-	default: 0,
+    abbr: 'm',
+    metavar: "N",
+    default: 0,
     help: "Max items to keep in feed (0 for no max)"
   })
   .help("Author: ".bold +
@@ -30,7 +30,7 @@ require('../lib/main.js').embedStrips(
   {
     url: argv.url,
     verbose: argv.verbose,
-	maxitems: argv.maxitems,
+    maxitems: argv.maxitems,
   },
   function (err, feedXml) {
     if (err) {
