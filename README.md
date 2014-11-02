@@ -6,6 +6,7 @@ This module iterates on the items on a feed and parse the webpages to create a n
 Supported websites:
 * GoComics
 * Dilbert.com
+* Cyanide & Happiness
 
 > The list of parsers is meant to be extensible, see [`lib/parser.js`](lib/parsers.js).  
 > PRs are welcome.
@@ -31,9 +32,9 @@ into [this](http://leesei-comics-feed.herokuapp.com/embed/http%3A%2F%2Ffeed.dilb
 
 ## Tested on
 
-http://feed.dilbert.com/dilbert/daily_strip  
-http://feeds.feedburner.com/uclick/dilbert-classics
-http://feeds.feedburner.com/Explosm
+- http://feed.dilbert.com/dilbert/daily_strip  
+- http://feeds.feedburner.com/uclick/dilbert-classics
+- http://feeds.feedburner.com/Explosm
 
 ## TODO
 
