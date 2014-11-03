@@ -30,8 +30,7 @@
     "rss": "~0.2.1",
     "feedparser": "~0.16.5",
     "cheerio": "~0.12.4",
-    "nomnom": "~1.6.2",
-    "follow-redirects": "~0.0.3"
+    "nomnom": "~1.6.2"
   },
   "license": "MIT"
 }
