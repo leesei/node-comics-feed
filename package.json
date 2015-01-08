@@ -1,7 +1,7 @@
 {
   "name": "comics-feed",
   "version": "0.0.7",
-  "homepage": "http://github.com/leesei/node-comics-feed",
+  "homepage": "http://github.com/eguendelman/node-comics-feed",
   "description": "Scrape comics strips from feed, embed the strip images and create a new feed",
   "author": {
     "name": "KY LEE",
@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/leesei/node-comics-feed"
+    "url": "http://github.com/eguendelman/node-comics-feed"
   },
   "bugs": {
-    "url": "http://github.com/leesei/node-comics-feed/issues"
+    "url": "http://github.com/eguendelman/node-comics-feed/issues"
   },
   "keywords": [
     "rss",
