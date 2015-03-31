@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
+var chalk = require('nomnom/node_modules/chalk');
 var argv = require("nomnom")
-  .script("getitle")
+  .script("comics-feed")
   .option('url', {
     position: 0,
     help: "feed url or file to parse",
@@ -13,14 +14,14 @@ var argv = require("nomnom")
     flag: true,
     help: "Print processing logs"
   })
-  .help("Author: ".bold +
-    "leesei@gmail.com".underline + "       "+
-    "Licence: ".bold + "MIT\n")
+  .help(chalk.bold("Author: ") +
+    chalk.underline("leesei@gmail.com") + "       "+
+    chalk.bold("Licence: ") + "MIT\n")
   .parse();
 
 // console.log(argv);
 
-require('../lib/main.js').embedStrips(
+require('..').embedStrips(
   {
     url: argv.url,
     verbose: argv.verbose
@@ -31,7 +32,6 @@ require('../lib/main.js').embedStrips(
       console.error(err);
       return;
     }
-
     console.log(feedXml);
   }
 );
