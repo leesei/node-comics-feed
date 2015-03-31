@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 var chalk = require('nomnom/node_modules/chalk');
 var argv = require("nomnom")
   .script("comics-feed")

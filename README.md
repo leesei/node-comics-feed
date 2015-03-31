@@ -31,7 +31,8 @@ into [this](http://leesei-comics-feed.herokuapp.com/embed/http%3A%2F%2Ffeed.dilb
 
 ## Tested on
 
-http://feed.dilbert.com/dilbert/daily_strip  
+http://feed.dilbert.com/dilbert/daily_strip
+
 http://feeds.feedburner.com/uclick/dilbert-classics
 
 ## TODO
