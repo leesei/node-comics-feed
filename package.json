@@ -12,6 +12,9 @@
   "bin": {
     "comics-feed": "./bin/comics-feed"
   },
+  "scripts": {
+    "test": "tap --tap test/*.js"
+  },
   "repository": {
     "type": "git",
     "url": "http://github.com/leesei/node-comics-feed"
@@ -32,6 +35,9 @@
     "nomnom": "*",
     "rss": "*",
     "wreck": "*"
+  },
+  "devDependencies": {
+    "tap": "*"
   },
   "license": "MIT"
 }
