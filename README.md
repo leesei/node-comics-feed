@@ -4,17 +4,19 @@ RSS feeds of comics sites usually contains the links to a webpage but not the st
 This module iterates on the items on a feed and parse the webpages to create a new feed with embedded comic strips.
 
 Supported websites:
+
 * GoComics
 * Dilbert.com
+* Explosm.net
 
 > The list of parsers is meant to be extensible, see [`lib/parser.js`](lib/parsers.js).  
 > PRs are welcome.
 
-Inspired by [gocomics-scrape](https://github.com/mihaip/gocomics-scrape) and implemented it using Node.
+Inspired by [gocomics-scrape](https://github.com/mihaip/gocomics-scrape) and re-implemented using Node.
 
 ## Usage
 
-```bash
+```sh
 npm install comics-feed
 comics-feed [.rss|url]
 ```
@@ -34,6 +36,8 @@ into [this](http://leesei-comics-feed.herokuapp.com/embed/http%3A%2F%2Ffeed.dilb
 http://feed.dilbert.com/dilbert/daily_strip
 
 http://feeds.feedburner.com/uclick/dilbert-classics
+
+http://feeds.feedburner.com/Explosm (credits to [eguendelman](https://github.com/eguendelman))
 
 ## TODO
 
