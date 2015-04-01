@@ -3,6 +3,7 @@
 var FeedParser = require('feedparser');
 var Wreck = require('wreck');
 
+// https://github.com/isaacs/node-tap
 var test = require('tap').test;
 
 function processFeed(readStream, done) {
@@ -30,8 +31,6 @@ function processFeed(readStream, done) {
 function verifyLiveFeed(url, outFeed, t) {
   // TODO: verify number of items is the same
   // TODO: verify description contains an image URL
-  // t.equal()
-  // t.fail()
 
   // parse source feed
   // Wreck.get(url, function (err, response, payload) {
@@ -46,6 +45,7 @@ function verifyLiveFeed(url, outFeed, t) {
   // parse out feed
   processFeed(Wreck.toReadableStream(outFeed), function (err, items) {
     console.warn(items);
+    t.end();
   });
 }
 
@@ -59,7 +59,6 @@ function embedLiveFeed(url, t) {
       }
 
       verifyLiveFeed(url, outFeed, t);
-      t.end();
     }
   );
 }

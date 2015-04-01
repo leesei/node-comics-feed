@@ -1,6 +1,6 @@
 {
   "name": "comics-feed",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "homepage": "http://github.com/leesei/node-comics-feed",
   "description": "Scrape comics strips from feed, embed the strip images and create a new feed",
   "author": {

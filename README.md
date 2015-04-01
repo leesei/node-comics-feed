@@ -31,6 +31,35 @@ into [this](http://leesei-comics-feed.herokuapp.com/embed/http%3A%2F%2Ffeed.dilb
 
 (rendered by Firefox)
 
+## Parsers
+
+`parsers/*.js` will be installed in plugins in as of 0.0.9.
+A parser should have this interface.
+
+```javascript
+/**
+ * Parser = {
+ *   name,
+ *   match(),
+ *   scrape()
+ * }
+ *
+ * match():
+ * @param {Object}   siteUrl  parsed url for the comic strips site
+ * Returns whether this scraper can handle this site
+ *
+ * scrape():
+ * @param {String}   baseUrl  url of the webpage containing the comic strip
+ * @param {Object}   $        [cheerio](http://matthewmueller.github.io/cheerio/) object containing the parsed page
+ * @param {Function} callback callback function to return the parsed strip image URL
+ *
+ * callback:
+ * @param {Object}   error    error object if one occurs
+ * @param {String}   img_url  the parsed strip image URL
+ *
+ */
+```
+
 ## Tested on
 
 http://feed.dilbert.com/dilbert/daily_strip
