@@ -7,7 +7,7 @@ Supported websites:
 
 * GoComics
 * Dilbert.com
-* Explosm.net
+* Explosm.net (credits to [eguendelman](https://github.com/eguendelman))
 
 > The list of parsers is meant to be extensible, see [`lib/parser.js`](lib/parsers.js).  
 > PRs are welcome.
@@ -62,14 +62,11 @@ A parser should have this interface.
 
 ## Tested on
 
-http://feed.dilbert.com/dilbert/daily_strip
-
-http://feeds.feedburner.com/uclick/dilbert-classics
-
-http://feeds.feedburner.com/Explosm (credits to [eguendelman](https://github.com/eguendelman))
+See `test/live.js`
 
 ## TODO
 
+- allow parsers to return custom description
 - error handling
   - invalid URL
   - malformed feed
@@ -78,6 +75,6 @@ http://feeds.feedburner.com/Explosm (credits to [eguendelman](https://github.com
 - re-entrance
 - module globals cleanup
 
-## SAAS on Heroku
+## SaaS on Heroku
 
 [heroku-comics-feed](https://github.com/leesei/heroku-comics-feed) uses this module to provide a subscribable RSS service.
