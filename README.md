@@ -1,5 +1,9 @@
 # node-comics-feed
 
+[![npm](https://img.shields.io/npm/v/comics-feed.svg?style=flat-square)](https://www.npmjs.com/comics-feed)
+![Licence](https://img.shields.io/npm/l/comics-feed.svg?style=flat-square)
+[![David](https://img.shields.io/david/leesei/node-comics-feed.svg?style=flat-square)](https://david-dm.org/leesei/node-comics-feed)
+
 RSS feeds of comics sites usually contains the links to a webpage but not the strip images.  
 This module iterates on the items on a feed and parse the webpages to create a new feed with embedded comic strips.
 
@@ -9,7 +13,7 @@ Supported websites:
 * Dilbert.com
 * Explosm.net (credits to [eguendelman](https://github.com/eguendelman))
 
-> The list of parsers is meant to be extensible, see [`lib/parser.js`](lib/parsers.js).  
+> The list of parsers is meant to be extensible, see [`Parsers`](#parsers).  
 > PRs are welcome.
 
 Inspired by [gocomics-scrape](https://github.com/mihaip/gocomics-scrape) and re-implemented using Node.
@@ -34,7 +38,8 @@ into [this](http://leesei-comics-feed.herokuapp.com/embed/http%3A%2F%2Ffeed.dilb
 ## Parsers
 
 `parsers/*.js` will be loaded automatically by `parserFactory` as of 0.0.9.
-A parser should have this interface.
+
+A parser should have this interface:
 
 ```javascript
 /**
